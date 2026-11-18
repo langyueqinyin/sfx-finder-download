@@ -27,8 +27,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Build and verify
-        run: npm run verify
+      - name: Verify published files
+        run: npm test
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site
