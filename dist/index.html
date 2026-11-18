@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SFX Finder is a private, local search tool for the shared SFX library. Search, preview, select, and copy sound effects without uploading your library.">
+  <meta name="theme-color" content="#171815">
+  <title>SFX Finder — Search your sound library</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="SFX Finder home">
+      <span class="wordmark-mark" aria-hidden="true">SF</span>
+      <span>SFX Finder</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#privacy">Privacy</a>
+      <a href="#setup">Setup</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Local tool for film editors</p>
+        <h1>Search your sound library.<br><em>Not your patience.</em></h1>
+        <p class="hero-deck">Find numbered sound effects by description, preview them instantly, collect the takes you like, and copy them into your project folder.</p>
+
+        <div class="download-row" aria-label="Downloads">
+          <a class="download primary" href="downloads/SFX-Finder-for-Mac.zip" download data-download="mac">
+            <span class="download-os">Download for Mac</span>
+            <span class="download-meta">Universal app · 21 MB</span>
+          </a>
+          <a class="download secondary" href="downloads/SFX-Finder-for-Windows.zip" download data-download="windows">
+            <span class="download-os">Download for Windows</span>
+            <span class="download-meta">Python package · 72 KB</span>
+          </a>
+        </div>
+
+        <p class="release-line"><span>Version 1.0</span><span>Free</span><span>No account</span><span>No library included</span></p>
+      </div>
+
+      <div class="hero-demo reveal" aria-label="Illustration of SFX Finder search results">
+        <div class="demo-chrome">
+          <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="demo-title">SFX Finder</span>
+          <span class="demo-count">39,756 clips</span>
+        </div>
+        <div class="demo-search">
+          <span class="search-icon" aria-hidden="true"></span>
+          <span class="typed-query">body hit ground</span>
+          <kbd>/</kbd>
+        </div>
+        <div class="relaxed-note">
+          <span>No exact match — search widened locally</span>
+          <code>body → bodyfall / torso</code>
+        </div>
+        <div class="result-list">
+          <button class="result active" type="button" aria-label="Illustrative result: Bodyfall human on grass">
+            <span class="play-icon">▶</span>
+            <span class="result-copy"><b>BODYFALL, HUMAN — BODYFALL ON GRASS</b><small>AT-06_44_02.mp3 · ≈ 0:03</small></span>
+            <span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </button>
+          <button class="result" type="button" aria-label="Illustrative result: Bodyfall on wood">
+            <span class="play-icon">▶</span>
+            <span class="result-copy"><b>BODYFALL — HEAVY, ON WOOD FLOOR</b><small>PE-21_09_04.mp3 · ≈ 0:02</small></span>
+            <span class="select-box" aria-hidden="true"></span>
+          </button>
+          <button class="result" type="button" aria-label="Illustrative result: Body thud on concrete">
+            <span class="play-icon">▶</span>
+            <span class="result-copy"><b>BODY THUD — CONCRETE, CLOSE</b><small>WORKS-03_18_01.mp3 · ≈ 0:02</small></span>
+            <span class="select-box checked" aria-hidden="true">✓</span>
+          </button>
+        </div>
+        <div class="demo-footer"><span>↑↓ move</span><span>space preview / pause</span><span>enter select</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Product guarantees">
+      <p>Built for temp editorial</p>
+      <p>Understands catalog descriptions</p>
+      <p>Files stay on your drives</p>
+      <p>Copies — never moves</p>
+    </section>
+
+    <section class="privacy section" id="privacy">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Privacy, in plain English</p>
+        <h2>Your library is none of our business.</h2>
+        <p>SFX Finder runs entirely on your computer. It creates a small local index so you can search quickly. The website and the app are designed without accounts, telemetry, or remote library processing.</p>
+      </div>
+
+      <div class="privacy-grid reveal">
+        <article class="privacy-card never">
+          <span class="card-number">01</span>
+          <h3>Never uploaded</h3>
+          <ul>
+            <li>Audio files or previews</li>
+            <li>Filenames or folder paths</li>
+            <li>Catalog descriptions</li>
+            <li>Search history or selected clips</li>
+          </ul>
+        </article>
+        <article class="privacy-card local">
+          <span class="card-number">02</span>
+          <h3>Stored locally</h3>
+          <ul>
+            <li>Your searchable index</li>
+            <li>Your library location</li>
+            <li>Your app settings</li>
+            <li>Your copy history</li>
+          </ul>
+        </article>
+        <article class="privacy-card absent">
+          <span class="card-number">03</span>
+          <h3>Simply not present</h3>
+          <ul>
+            <li>No analytics</li>
+            <li>No tracking cookies</li>
+            <li>No account or sign-in</li>
+            <li>No background cloud sync</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="network-note reveal">
+        <strong>When is the internet used?</strong>
+        <p>Only when you visit this page and download the installer. Once installed, searching and previewing the library does not require an internet connection. Feedback opens your own email app; this site does not receive or relay the message.</p>
+      </div>
+    </section>
+
+    <section class="setup section" id="setup">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Three minutes, once</p>
+        <h2>Point it at the library.<br>Then get back to the cut.</h2>
+      </div>
+
+      <ol class="steps reveal">
+        <li>
+          <span class="step-no">1</span>
+          <div><h3>Download and open</h3><p>Mac: unzip, then Right-click the app and choose <strong>Open</strong> the first time. Windows: install Python, select <strong>Add Python to PATH</strong>, then run <code>start.bat</code>.</p></div>
+        </li>
+        <li>
+          <span class="step-no">2</span>
+          <div><h3>Choose the shared library</h3><p>Select the folder containing <code>SFX_DB.xls</code> and <code>SFX Libraries</code>. The app reads filenames and the catalog sheet to build a local index.</p></div>
+        </li>
+        <li>
+          <span class="step-no">3</span>
+          <div><h3>Search, preview, collect</h3><p>Try natural phrases such as <em>high heel concrete</em> or <em>body hit ground</em>. Tick the sounds you want and copy them into a named project folder.</p></div>
+        </li>
+      </ol>
+
+      <details class="install-help reveal">
+        <summary>Installation and removal details</summary>
+        <div class="details-grid">
+          <div><h3>Mac security prompt</h3><p>The Mac build is not notarized. If macOS says it cannot verify the developer, Right-click <strong>SFX Finder.app</strong>, choose <strong>Open</strong>, then confirm. You only need to do this once.</p></div>
+          <div><h3>Remove it completely</h3><p>Delete the app, then delete <code>~/Library/Application Support/SFX Finder/</code> to remove its local index and settings. Your sound library and copied project files are not touched.</p></div>
+        </div>
+      </details>
+    </section>
+
+    <section class="disclaimer section" id="disclaimer">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Important scope</p>
+        <h2>The tool organizes sounds.<br>It does not license them.</h2>
+      </div>
+      <div class="legal-copy reveal">
+        <p><strong>SFX Finder does not contain or distribute any sound-effects library.</strong> It only indexes files already available on your computer. You are responsible for having permission to possess and use those files and for following the terms of your project, employer, library vendor, and applicable copyright law.</p>
+        <p>The software is provided as-is, without warranty. It copies files only after you choose a destination; it does not move, rename, edit, or delete source audio. As with any production tool, keep backups of important project data.</p>
+      </div>
+    </section>
+
+    <section class="share section" id="feedback">
+      <div class="feedback-panel reveal">
+        <p class="eyebrow">Found something weird?</p>
+        <h2>Send a note to the editor who built it.</h2>
+        <p>The button opens your own email app. Please describe what you searched for, what you expected, and which platform you use. Do not attach copyrighted sound files or a full library listing.</p>
+        <a class="feedback-button" href="mailto:wangziyang0517@gmail.com?subject=SFX%20Finder%20Feedback&amp;body=App%20version%3A%201.0%0APlatform%3A%20Mac%20%2F%20Windows%0AIssue%20or%20suggestion%3A%0A%0AWhat%20I%20searched%20for%3A%0AWhat%20I%20expected%3A%0A%0APlease%20do%20not%20attach%20copyrighted%20audio%20files%20or%20a%20full%20library%20listing.">Email feedback</a>
+        <span class="email-address">wangziyang0517@gmail.com</span>
+      </div>
+
+      <div class="qr-panel reveal">
+        <div class="qr-frame"><img src="assets/qr-code.svg" width="220" height="220" alt="QR code for the SFX Finder download page"></div>
+        <div><p class="eyebrow">Share the permanent page</p><h3>One QR. Future versions too.</h3><p>Updates replace the installers, not this address.</p><a class="plain-url" href="https://langyueqinyin.github.io/sfx-finder-download/">langyueqinyin.github.io/<br>sfx-finder-download/</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wordmark"><span class="wordmark-mark" aria-hidden="true">SF</span><span>SFX Finder</span></div>
+    <p>Made by an editor, for editors.</p>
+    <p>© <span id="year">2026</span> Ziyang Wang</p>
+  </footer>
+</body>
+</html>
