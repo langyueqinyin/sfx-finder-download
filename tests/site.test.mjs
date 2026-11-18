@@ -81,3 +81,13 @@ test('page includes installation and uninstall guidance', () => {
   assert.match(html, /Add Python to PATH/s);
   assert.match(html, /Application Support\/SFX Finder/);
 });
+
+test('page presents catalogs as an optional enhancement for ordinary folders', () => {
+  const html = page();
+  assert.match(html, /Choose one folder containing your sound effects/);
+  assert.match(html, /Nested folders are indexed automatically/);
+  assert.match(html, /Catalog spreadsheets are optional/);
+  assert.match(html, /filenames, folder names, and embedded audio descriptions/);
+  assert.doesNotMatch(html, /Choose the shared library/);
+  assert.doesNotMatch(html, /folder containing <code>SFX_DB\.xls/);
+});

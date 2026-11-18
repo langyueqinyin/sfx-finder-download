@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SFX Finder is a private, local search tool for the shared SFX library. Search, preview, select, and copy sound effects without uploading your library.">
+  <meta name="description" content="SFX Finder is a private, local search tool for any folder-based sound library. Search, preview, select, and copy sound effects without uploading your library.">
   <meta name="theme-color" content="#171815">
   <title>SFX Finder — Search your sound library</title>
   <link rel="stylesheet" href="styles.css">
@@ -29,7 +29,7 @@
       <div class="hero-copy reveal">
         <p class="eyebrow"><span class="status-dot"></span> Local tool for film editors</p>
         <h1>Search your sound library.<br><em>Not your patience.</em></h1>
-        <p class="hero-deck">Find numbered sound effects by description, preview them instantly, collect the takes you like, and copy them into your project folder.</p>
+        <p class="hero-deck">Turn your existing sound-effect folders into a fast local search library. Search filenames, folders, and available descriptions, preview instantly, and copy your picks into a project folder.</p>
 
         <div class="download-row" aria-label="Downloads">
           <a class="download primary" href="downloads/SFX-Finder-for-Mac.zip" download data-download="mac">
@@ -83,7 +83,7 @@
 
     <section class="trust-strip" aria-label="Product guarantees">
       <p>Built for temp editorial</p>
-      <p>Understands catalog descriptions</p>
+      <p>Works with ordinary folders</p>
       <p>Files stay on your drives</p>
       <p>Copies — never moves</p>
     </section>
@@ -137,7 +137,7 @@
     <section class="setup section" id="setup">
       <div class="section-intro reveal">
         <p class="eyebrow">Three minutes, once</p>
-        <h2>Point it at the library.<br>Then get back to the cut.</h2>
+        <h2>Point it at your sounds.<br>Then get back to the cut.</h2>
       </div>
 
       <ol class="steps reveal">
@@ -147,13 +147,18 @@
         </li>
         <li>
           <span class="step-no">2</span>
-          <div><h3>Choose the shared library</h3><p>Select the folder containing <code>SFX_DB.xls</code> and <code>SFX Libraries</code>. The app reads filenames and the catalog sheet to build a local index.</p></div>
+          <div><h3>Choose your sound folder</h3><p>Choose one folder containing your sound effects. Nested folders are indexed automatically. Search works with filenames, folder names, and embedded audio descriptions.</p></div>
         </li>
         <li>
           <span class="step-no">3</span>
           <div><h3>Search, preview, collect</h3><p>Try natural phrases such as <em>high heel concrete</em> or <em>body hit ground</em>. Tick the sounds you want and copy them into a named project folder.</p></div>
         </li>
       </ol>
+
+      <div class="network-note reveal">
+        <strong>Have a catalog spreadsheet?</strong>
+        <p>Catalog spreadsheets are optional. If a matching XLS, XLSX, or CSV file is present, SFX Finder automatically adds its readable descriptions. Everyone else can ignore this feature completely.</p>
+      </div>
 
       <details class="install-help reveal">
         <summary>Installation and removal details</summary>
